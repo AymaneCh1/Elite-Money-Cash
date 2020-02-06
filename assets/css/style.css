@@ -1,0 +1,265 @@
+/*
+    dark purple : #7b1d5b
+    pink : #ff3655
+    light purple : #9268e8
+*/
+
+*::before,
+*::after,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font: normal 100% 'Montserrat', sans-serif, serif;
+    background-color: #fefefe;
+    color: #121313;
+    text-rendering: optimizeLegibility;
+}
+
+main {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    padding: 20px 0 0 20px;
+    cursor: pointer;
+    float: left;
+}
+
+.logo img {
+    width: 100%;
+    display: block;
+}
+
+nav {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+.btn-nav:link,
+.btn-nav:visited {
+    text-decoration: none;
+    color: #f0f0f0;
+    text-transform: uppercase;
+    float: right;
+    margin: 40px 20px 0 0; 
+}
+
+.btn-nav::before {
+    content: '';
+    width: 50px;
+    height: 1px;
+    background: #f0f0f0;
+    float: left;
+    margin: 8px 20px 0 0;
+}
+
+.main-head {
+    position: absolute;
+    top: 230px;
+    left: 200px;
+    color: #f0f0f0;
+    font-size: 40px;
+    text-transform: uppercase;
+    width: 65%;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.main-head span {
+    color: 	#3b5998;
+    background-color: #f0f0f0;
+}
+
+.fbbusiness {
+    text-align: center;
+    transform: scale(.2);
+}
+
+.infobx {
+    transform: translateY(30px);
+    margin: 0 auto;
+    max-width: 1224px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.infobx p {
+    margin: 10px 0 0 0;
+    font-size: 13px;
+    width: 80%;
+}
+
+.clients {
+    transform: translateY(80px);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0 0 60px 0;
+    font-size: 30px;
+}
+
+.testbx {
+    transform: translateY(50px);
+    display: flex;
+    align-items: center;
+}
+
+[class*='test-'] {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to right, #7b1d5c02, #ff365404);
+    border-radius: 2px;
+    flex: 1;
+    margin: 20px;
+    border-radius: 22px;
+}
+
+.topbx {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+}
+
+[class*='testpic-'] {
+    width: 50px;
+    height: 50px;
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(30px);
+    margin: 10px 0 0 0;
+    background-position: 20 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.testpic-1 {
+    background-image: url(../img/test1.jpg);
+}
+
+.testpic-2 {
+    background-image: url(../img/test2.jpg);
+}
+
+.testpic-3 {
+    background-image: url(../img/test3.jpg);
+}
+
+.testbx span {
+    font-weight: 300;
+}
+
+.testbx p {
+    margin: 40px 0 0 20px;
+    width: 80%;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.data {
+    transform: translateY(90px);
+    margin: 0 auto;
+    max-width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+[class*='circle-bx-'] {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #9268e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 20px 0;
+}
+
+.circle-bx-1 {
+    border: 1px solid #9268e8;
+}
+
+.circle-bx-2 {
+    border: 1px solid #ff3655;
+}
+
+.mobbx,
+.deskbx {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bdef {
+    float: right;
+    margin: 0 50px 0 0;
+}
+
+.infocont {
+    margin: 0 auto;
+    max-width: 800px;
+    transform: translateY(150px);
+    padding: 0 0 20px 0;
+    height: 100px;
+}
+
+.cont-1 { float: left; }
+
+[class*="cont-"] {
+    border: 1px solid transparent ;
+    width: 50%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon { 
+    margin: 0 0 10px 0;
+    color: #ff3655;
+}
+
+.number { font-weight: 300; }
