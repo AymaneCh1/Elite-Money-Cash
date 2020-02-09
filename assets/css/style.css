@@ -81,6 +81,11 @@ nav ul li a:visited {
     margin: 40px 20px 0 0; 
 }
 
+.btn-nav:hover::before {
+    transform: translateX(-20px);
+    animation-iteration-count: ;
+}
+
 .btn-nav::before {
     content: '';
     width: 50px;
@@ -88,6 +93,7 @@ nav ul li a:visited {
     background: #f0f0f0;
     float: left;
     margin: 8px 20px 0 0;
+    transition: all .5s ease-out;
 }
 
 .main-head {
@@ -263,3 +269,15 @@ h2 {
 }
 
 .number { font-weight: 300; }
+
+.clients span {
+    color: #3b5998;
+}
+
+.info-2 {
+    animation-delay: 1.1s;
+}
+
+.info-3 {
+    animation-delay: 1.1s;
+}
